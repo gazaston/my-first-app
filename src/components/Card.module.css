@@ -1,0 +1,35 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: white;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card dl {
+  margin: 0;
+  padding: 0;
+}
+
+.card dt,
+.card dd {
+  display: inline;
+  margin: 0;
+}
+
+.card dt {
+  font-weight: bold;
+}
+
+.card dt::after {
+  content: ': ';
+}
+
+.card dd::after {
+  content: '\A';
+  white-space: pre;
+}
