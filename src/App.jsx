@@ -3,6 +3,8 @@ import Card from './components/Card'
 
 function App() {
 
+  // Hard-coded data — each object represents one Pokémon with the stats we want to display.
+  // The id matches the PokéAPI numbering, which the Avatar component uses to fetch the sprite image.
   const pokemons = [
     { id: 1, name: "Bulbasaur", type: "Grass", hp: 45, attack: 49 },
     { id: 4, name: "Charmander", type: "Fire", hp: 39, attack: 52 },
@@ -33,6 +35,8 @@ function App() {
     <div className="App">
       <h1>A load of Pokemons</h1>
       <div className="card-container">
+        {/* .map() loops over the array and returns a Card for each Pokémon.
+            key={pokemon.id} is required by React to efficiently track list items — it must be unique. */}
         {pokemons.map(pokemon => (
           <Card key={pokemon.id} pokemon={pokemon} />
         ))}
