@@ -6,3 +6,44 @@
   max-width: calc(5 * 160px + 4 * 16px + 2 * 16px);
   margin: 0 auto;
 }
+
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: calc(5 * 160px + 4 * 16px + 2 * 16px);
+  gap: 8px;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+.filter {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.filter.active {
+  background: white;
+  color: #333;
+}
+
+.explainer {
+  max-width: calc(5 * 160px + 4 * 16px + 2 * 16px);
+  margin: 32px auto;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: white;
+}
+
+.explainer pre {
+  font-family: monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  white-space: pre;
+  margin: 0;
+}
